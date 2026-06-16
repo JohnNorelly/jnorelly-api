@@ -1,7 +1,7 @@
 {
   "name": "strata-api",
   "version": "1.0.0",
-  "description": "API REST em camadas — Dev Strata by Johnn",
+  "description": "API REST em camadas — Dev Strata by John Norelly",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "test": "node --test tests/*.test.js"
   },
   "keywords": ["api", "express", "nodejs", "portfolio"],
-  "author": "Johnn",
+  "author": "John Norelly",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",

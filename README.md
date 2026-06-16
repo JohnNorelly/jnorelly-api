@@ -1,6 +1,6 @@
 # Strata API
 
-API REST em **camadas** — projeto de portfólio de **Johnn** (Dev Strata).
+API REST em **camadas** — projeto de portfólio de **John Norelly** (Dev Strata).
 
 Demonstra organização de rotas, serviços, testes e documentação para vagas de desenvolvedor júnior back-end / full stack.
 
@@ -44,4 +44,4 @@ strata-api/
 
 ## Licença
 
-MIT © Johnn
+MIT © John Norelly

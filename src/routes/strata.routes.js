@@ -6,7 +6,7 @@ export const strataRouter = Router();
 strataRouter.get("/layers", (_req, res) => {
   res.json({
     project: "strata-api",
-    author: "Johnn",
+    author: "John Norelly",
     layers: getLayers(),
   });
 });
