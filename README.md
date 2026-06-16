@@ -1,16 +1,14 @@
-# Strata API
+# JNorelly API
 
-API REST em **camadas** — projeto de portfólio de **John Norelly** (Dev Strata).
-
-Demonstra organização de rotas, serviços, testes e documentação para vagas de desenvolvedor júnior back-end / full stack.
+API REST da marca **JNorelly** — portfolio de **John Norelly**.
 
 ## Endpoints
 
-| Método | Rota | Descrição |
+| Metodo | Rota | Descricao |
 |--------|------|-----------|
 | GET | `/api/v1/health` | Health check |
-| GET | `/api/v1/strata/layers` | Lista camadas do projeto |
-| GET | `/api/v1/strata/layers/:id` | Detalhe de uma camada |
+| GET | `/api/v1/projects` | Lista projetos do portfolio |
+| GET | `/api/v1/projects/:id` | Detalhe de um projeto |
 
 ## Stack
 
@@ -23,25 +21,12 @@ npm install
 npm run dev
 ```
 
-Teste: `curl http://localhost:3333/api/v1/strata/layers`
-
 ## Testes
 
 ```bash
 npm test
 ```
 
-## Estrutura
+## Licenca
 
-```
-strata-api/
-├── src/
-│   ├── server.js
-│   ├── routes/
-│   └── services/
-└── tests/
-```
-
-## Licença
-
-MIT © John Norelly
+MIT © JNorelly · John Norelly

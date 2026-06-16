@@ -1,7 +1,7 @@
 {
-  "name": "strata-api",
+  "name": "jnorelly-api",
   "version": "1.0.0",
-  "description": "API REST em camadas — Dev Strata by John Norelly",
+  "description": "API REST - marca JNorelly by John Norelly",
   "main": "src/server.js",
   "type": "module",
   "scripts": {

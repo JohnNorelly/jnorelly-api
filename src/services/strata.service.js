@@ -1,34 +1,39 @@
-const LAYERS = [
+const PROJECTS = [
   {
-    id: "presentation",
-    name: "Camada de Apresentação",
-    depth: 0,
-    stack: ["React", "HTML", "CSS"],
-    description: "Interfaces acessíveis e responsivas.",
+    id: "jnorelly-portfolio",
+    name: "JNorelly Portfolio",
+    type: "Front-end",
+    stack: ["HTML", "CSS", "JavaScript"],
+    description: "Site portfolio responsivo com deploy no GitHub Pages.",
   },
   {
-    id: "application",
-    name: "Camada de Aplicação",
-    depth: 1,
-    stack: ["Express", "Node.js"],
-    description: "Rotas, validação e orquestração de serviços.",
+    id: "jnorelly-api",
+    name: "JNorelly API",
+    type: "Back-end",
+    stack: ["Node.js", "Express"],
+    description: "API REST com rotas versionadas e testes automatizados.",
   },
   {
-    id: "domain",
-    name: "Camada de Domínio",
-    depth: 2,
-    stack: ["JavaScript", "TypeScript"],
-    description: "Regras de negócio e modelos de dados.",
+    id: "jnorelly-ui",
+    name: "JNorelly UI",
+    type: "UI",
+    stack: ["React", "TypeScript", "Vite"],
+    description: "Showcase de componentes React tipados e reutilizaveis.",
   },
   {
-    id: "foundation",
-    name: "Fundação",
-    depth: 3,
-    stack: ["Git", "Tests", "CI"],
-    description: "Qualidade, versionamento e deploy confiável.",
+    id: "jnorelly-cli",
+    name: "JNorelly CLI",
+    type: "Tools",
+    stack: ["Python", "pytest"],
+    description: "CLI para validar estrutura minima de repositorios.",
   },
 ];
 
+export function getProjects() {
+  return PROJECTS;
+}
+
+// compat alias
 export function getLayers() {
-  return LAYERS;
+  return getProjects();
 }

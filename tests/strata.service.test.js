@@ -1,19 +1,19 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { getLayers } from "../src/services/strata.service.js";
+import { getProjects } from "../src/services/strata.service.js";
 
-test("getLayers retorna 4 camadas", () => {
-  const layers = getLayers();
-  assert.equal(layers.length, 4);
+test("getProjects retorna 4 projetos JNorelly", () => {
+  const projects = getProjects();
+  assert.equal(projects.length, 4);
 });
 
-test("cada camada possui id único", () => {
-  const ids = getLayers().map((layer) => layer.id);
+test("cada projeto possui id unico", () => {
+  const ids = getProjects().map((p) => p.id);
   assert.equal(new Set(ids).size, ids.length);
 });
 
-test("camada presentation existe", () => {
-  const layer = getLayers().find((item) => item.id === "presentation");
-  assert.ok(layer);
-  assert.match(layer.name, /Apresentação/);
+test("projeto jnorelly-api existe", () => {
+  const project = getProjects().find((p) => p.id === "jnorelly-api");
+  assert.ok(project);
+  assert.match(project.name, /JNorelly API/);
 });

@@ -1,22 +1,22 @@
 import { Router } from "express";
-import { getLayers } from "../services/strata.service.js";
+import { getProjects } from "../services/strata.service.js";
 
-export const strataRouter = Router();
+export const projectsRouter = Router();
 
-strataRouter.get("/layers", (_req, res) => {
+projectsRouter.get("/", (_req, res) => {
   res.json({
-    project: "strata-api",
+    brand: "JNorelly",
     author: "John Norelly",
-    layers: getLayers(),
+    projects: getProjects(),
   });
 });
 
-strataRouter.get("/layers/:id", (req, res) => {
-  const layer = getLayers().find((item) => item.id === req.params.id);
+projectsRouter.get("/:id", (req, res) => {
+  const project = getProjects().find((item) => item.id === req.params.id);
 
-  if (!layer) {
-    return res.status(404).json({ error: "Camada não encontrada" });
+  if (!project) {
+    return res.status(404).json({ error: "Projeto nao encontrado" });
   }
 
-  return res.json(layer);
+  return res.json(project);
 });
